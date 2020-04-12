@@ -6,6 +6,9 @@ import time
 
 env = gym.make("MountainCar-v0")
 
+print('OS_hight', env.observation_space.high)
+print('OS_low', env.observation_space.low)
+
 
 file_name = 'q_table3.npy'
 

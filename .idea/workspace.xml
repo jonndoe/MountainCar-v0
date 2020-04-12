@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c94a9b-8255-4d3d-bccb-48cbffd35121" name="Default Changelist" comment="" />
+    <list default="true" id="04c94a9b-8255-4d3d-bccb-48cbffd35121" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mountain_car_v0_2/net_play.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mountain_car_v0_2/net_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/net_play.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/net_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_train_and_visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/net_train_and_visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_table.npy" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/q_table.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_table2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/q_table2.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_table3.npy" beforeDir="false" afterPath="$PROJECT_DIR$/mountain_car_v0_1/q_table3.npy" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net_train_and_visualize.py">
+        <entry file="file://$PROJECT_DIR$/mountain_car_v0_2/net_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="114">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -32,7 +43,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pybullet-gym" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,13 +60,16 @@
         <option value="$PROJECT_DIR$/net_train.py" />
         <option value="$PROJECT_DIR$/main8.py" />
         <option value="$PROJECT_DIR$/net_train_and_visualize.py" />
+        <option value="$PROJECT_DIR$/mountain_car_v0_2/net_play.py" />
+        <option value="$PROJECT_DIR$/mountain_car_v0_1/net_train.py" />
+        <option value="$PROJECT_DIR$/mountain_car_v0_2/net_train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="546" />
+    <option name="x" value="713" />
     <option name="y" value="73" />
-    <option name="width" value="1350" />
+    <option name="width" value="1183" />
     <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,10 +93,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mountain_car_v0_2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mountain_car_v0_2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mountain_car_v0_1" />
       <recent name="$PROJECT_DIR$/scrap" />
     </key>
   </component>
@@ -98,8 +117,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main8">
-    <configuration name="main6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.example">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="openAI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,32 +126,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gym-retro" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrap/main6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main7" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="openAI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrap/main7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gym-retro/example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="net_play" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="net_play (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="openAI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +168,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mountain_car_v0_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_play.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mountain_car_v0_2/net_play.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="net_train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="openAI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mountain_car_v0_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mountain_car_v0_2/net_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,7 +214,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mountain_car_v0_1/net_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main8" />
-        <item itemvalue="Python.main7" />
+        <item itemvalue="Python.example" />
+        <item itemvalue="Python.net_train (1)" />
         <item itemvalue="Python.net_train" />
-        <item itemvalue="Python.net_play" />
-        <item itemvalue="Python.main6" />
+        <item itemvalue="Python.net_play (1)" />
+        <item itemvalue="Python.main8" />
       </list>
     </recent_temporary>
   </component>
@@ -228,20 +247,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="546" y="73" width="1350" height="938" extended-state="0" />
+    <frame x="713" y="73" width="1183" height="938" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18354978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46799117" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49302915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955848" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5107731" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39163497" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -331,26 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="49" column="64" selection-end-line="105" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrap/main8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -371,10 +370,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_train_and_visualize.py">
+    <entry file="file://$USER_HOME$/miniconda3/envs/env37_tensorflow/lib/python3.7/site-packages/gym/envs/classic_control/continuous_mountain_car.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="127">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mountain_car_v0_1/net_train_and_visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
           <caret line="136" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mountain_car_v0_1/net_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mountain_car_v0_1/net_play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mountain_car_v0_2/net_play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mountain_car_v0_2/net_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
