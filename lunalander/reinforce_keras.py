@@ -4,6 +4,8 @@ from keras.optimizers import Adam
 import keras.backend as K
 import numpy as np
 
+from keras.models import model_from_json
+
 
 class Agent(object):
     def __init__(self,
@@ -46,7 +48,8 @@ class Agent(object):
             return K.sum(-log_lik*advantages)
 
         policy = Model(input=[input, advantages], output=[probs])
-        policy.compile(optimizer=Adam(lr=self.lr), loss=custom_loss)
+        #policy.compile(optimizer=Adam(lr=self.lr), loss=custom_loss)
+        policy.compile(loss='binary_crossentropy', optimizer='adam')
 
 
         predict = Model(input=[input], output=[probs])
@@ -75,6 +78,7 @@ class Agent(object):
         self.reward_memory.append(reward)
 
     def learn(self):
+        print('entered learn function....')
         state_memory = np.array(self.state_memory)
         action_memory = np.array(self.action_memory)
         reward_memory = np.array(self.reward_memory)
@@ -84,6 +88,7 @@ class Agent(object):
 
         G = np.zeros_like(reward_memory)
         for t in range(len(reward_memory)):
+            print('entered for t loop in learn function...')
             G_sum = 0
             discount = 1
             for k in range(t, len(reward_memory)):
@@ -95,18 +100,48 @@ class Agent(object):
         std = np.std(G) if np.std(G) > 0 else 1
         self.G = (G-mean)/std
 
+        print('b4 self.policy.train_on_batch()..........')
         cost = self.policy.train_on_batch([state_memory, self.G], actions)
+        print('finish train_on_batch()....')
 
         self.state_memory = []
         self.action_memory = []
         self.reward_memory = []
 
     def save_model(self):
-        self.policy.save('reinforce.h5')
+        self.policy.save(self.model_file)
         #print(self.policy.summary())
+
+    def save_model_json(self):
+        # serialize model to JSON
+        model_json = self.policy.to_json()
+        with open("model.json", "w") as json_file:
+            json_file.write(model_json)
+        # serialize weights to HDF5
+        self.policy.save_weights("model.h5")
+        print("Saved model to disk")
 
 
     def load_model(self):
+        self.policy = load_model(self.model_file)
+
+
+    def load_model_json(self):
+
+        # load json and create model
+        json_file = open('model.json', 'r')
+        loaded_model_json = json_file.read()
+        json_file.close()
+        self.policy = model_from_json(loaded_model_json)
+        # load weights into new model
+        self.policy.load_weights("model.h5")
+        print("Loaded model from disk")
+        #self.policy.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+        self.policy.compile(loss='binary_crossentropy', optimizer='adam')
+        print('model compiled')
+
+
+    def load_model_custom(self):
 
         advantages = Input(shape=[1])
 
